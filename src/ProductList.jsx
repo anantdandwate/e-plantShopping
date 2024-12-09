@@ -9,9 +9,6 @@ function ProductList() {
   const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
   const [addedToCart, setAddedToCart] = useState({});
   const dispatch = useDispatch();
-  const cart = useSelector((state) => state.cart.items);
-
-  const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
 
   const plantsArray = [
     {
